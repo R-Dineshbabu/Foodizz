@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Foodiz - Food Delivery</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="d-flex align-items-center justify-content-between p-3 bg-danger text-white">
+    <div class="logo">🍴 Foodiz</div>
+    <div class="location">📍 Select Location</div>
+    <input type="text" placeholder="Search food..." class="search-bar">
+    <div class="cart">🛒 Cart <span id="cart-count">0</span></div>
+    <div class="auth-buttons">
+      <button class="btn btn-light btn-sm mx-1">Login</button>
+      <button class="btn btn-light btn-sm mx-1">Sign Up</button>
+    </div>
+  </header>
+
+  <!-- Sub-header -->
+  <nav class="sub-header d-flex justify-content-between align-items-center bg-light py-2 px-4">
+    <div class="categories">
+      <span class="mx-3">🍕 Pizza</span>
+      <span class="mx-3">🍔 Burgers</span>
+      <span class="mx-3">🍜 Noodles</span>
+      <span class="mx-3">🍰 Desserts</span>
+    </div>
+    <input type="text" class="restaurant-search form-control" placeholder="Search restaurants...">
+  </nav>
+
+  <!-- Food Cards Section -->
+  <main class="container my-5">
+    <div class="row">
+      <!-- Card Example -->
+      <div class="col-md-3 mb-4">
+        <div class="food-card p-3 border rounded shadow-sm">
+          <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/fdcxnnojzc5sezyv2lba" alt="Pizza" class="img-fluid rounded mb-3">
+          <h3>Margherita Pizza</h3>
+          <p>Classic delight with 100% real mozzarella cheese.</p>
+          <div class="price">₹199</div>
+          <div class="quantity">Qty:
+            <select class="form-control">
+              <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            </select>
+          </div>
+          <button class="btn btn-danger btn-block mt-3">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Card Example -->
+      <div class="col-md-3 mb-4">
+        <div class="food-card p-3 border rounded shadow-sm">
+          <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/1299c4f150d1c040c04aacf4f1c49645" alt="Burger" class="img-fluid rounded mb-3">
+          <h3>Veggie Burger</h3>
+          <p>Loaded with fresh veggies and sauces.</p>
+          <div class="price">₹149</div>
+          <div class="quantity">Qty:
+            <select class="form-control">
+              <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            </select>
+          </div>
+          <button class="btn btn-danger btn-block mt-3">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Card Example -->
+      <div class="col-md-3 mb-4">
+        <div class="food-card p-3 border rounded shadow-sm">
+          <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/zsnpoazymkehqesmkcx8" alt="Noodles" class="img-fluid rounded mb-3">
+          <h3>Schezwan Noodles</h3>
+          <p>Spicy and delicious street-style noodles.</p>
+          <div class="price">₹179</div>
+          <div class="quantity">Qty:
+            <select class="form-control">
+              <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            </select>
+          </div>
+          <button class="btn btn-danger btn-block mt-3">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Card Example -->
+      <div class="col-md-3 mb-4">
+        <div class="food-card p-3 border rounded shadow-sm">
+          <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/kt7k7g31hdsqzfn85efq" alt="Dessert" class="img-fluid rounded mb-3">
+          <h3>Chocolate Cake</h3>
+          <p>Moist, rich and absolutely irresistible.</p>
+          <div class="price">₹99</div>
+          <div class="quantity">Qty:
+            <select class="form-control">
+              <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            </select>
+          </div>
+          <button class="btn btn-danger btn-block mt-3">Add to Cart</button>
+        </div>
+      </div>
+      <!-- Card Example 4 -->
+      <div class="col-md-3 mb-4">
+        <div class="food-card p-3 border rounded shadow-sm">
+          <img src="https://source.unsplash.com/300x200/?dessert" alt="Dessert" class="img-fluid rounded mb-3">
+          <h3>Chocolate Cake</h3>
+          <p>Moist, rich and absolutely irresistible.</p>
+          <div class="price">₹99</div>
+          <div class="quantity">Qty:
+            <select class="form-control">
+              <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            </select>
+          </div>
+          <button class="btn btn-danger btn-block mt-3">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Card Example 5 -->
+      <div class="col-md-3 mb-4">
+        <div class="food-card p-3 border rounded shadow-sm">
+          <img src="https://source.unsplash.com/300x200/?pasta" alt="Pasta" class="img-fluid rounded mb-3">
+          <h3>Alfredo Pasta</h3>
+          <p>Rich and creamy pasta with a touch of garlic.</p>
+          <div class="price">₹229</div>
+          <div class="quantity">Qty:
+            <select class="form-control">
+              <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            </select>
+          </div>
+          <button class="btn btn-danger btn-block mt-3">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Card Example 6 -->
+      <div class="col-md-3 mb-4">
+        <div class="food-card p-3 border rounded shadow-sm">
+          <img src="https://source.unsplash.com/300x200/?sushi" alt="Sushi" class="img-fluid rounded mb-3">
+          <h3>Veggie Sushi</h3>
+          <p>Fresh veggies rolled in nori with sticky rice.</p>
+          <div class="price">₹350</div>
+          <div class="quantity">Qty:
+            <select class="form-control">
+              <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            </select>
+          </div>
+          <button class="btn btn-danger btn-block mt-3">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Card Example 7 -->
+      <div class="col-md-3 mb-4">
+        <div class="food-card p-3 border rounded shadow-sm">
+          <img src="https://source.unsplash.com/300x200/?salad" alt="Salad" class="img-fluid rounded mb-3">
+          <h3>Caesar Salad</h3>
+          <p>Fresh greens with creamy dressing and croutons.</p>
+          <div class="price">₹120</div>
+          <div class="quantity">Qty:
+            <select class="form-control">
+              <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            </select>
+          </div>
+          <button class="btn btn-danger btn-block mt-3">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Card Example 8 -->
+      <div class="col-md-3 mb-4">
+        <div class="food-card p-3 border rounded shadow-sm">
+          <img src="https://source.unsplash.com/300x200/?sandwich" alt="Sandwich" class="img-fluid rounded mb-3">
+          <h3>Club Sandwich</h3>
+          <p>Layers of fresh veggies, chicken, and cheese.</p>
+          <div class="price">₹159</div>
+          <div class="quantity">Qty:
+            <select class="form-control">
+              <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            </select>
+          </div>
+          <button class="btn btn-danger btn-block mt-3">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Card Example 9 -->
+      <div class="col-md-3 mb-4">
+        <div class="food-card p-3 border rounded shadow-sm">
+          <img src="https://source.unsplash.com/300x200/?ice-cream" alt="Ice Cream" class="img-fluid rounded mb-3">
+          <h3>Vanilla Ice Cream</h3>
+          <p>Creamy vanilla ice cream topped with chocolate sauce.</p>
+          <div class="price">₹99</div>
+          <div class="quantity">Qty:
+            <select class="form-control">
+              <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            </select>
+          </div>
+          <button class="btn btn-danger btn-block mt-3">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Card Example 10 -->
+      <div class="col-md-3 mb-4">
+        <div class="food-card p-3 border rounded shadow-sm">
+          <img src="https://source.unsplash.com/300x200/?wrap" alt="Wrap" class="img-fluid rounded mb-3">
+          <h3>Chicken Wrap</h3>
+          <p>Grilled chicken, veggies, and sauce wrapped in a soft tortilla.</p>
+          <div class="price">₹149</div>
+          <div class="quantity">Qty:
+            <select class="form-control">
+              <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            </select>
+        </div>
+        <button class="btn btn-danger btn-block mt-3">Add to Cart</button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h4>About Foodiz</h4>
+          <p>Delicious food delivered to your doorstep.</p>
+        </div>
+        <div class="col-md-3">
+          <h4>Follow Us</h4>
+          <p>📘 Facebook</p>
+          <p>📸 Instagram</p>
+          <p>📞 WhatsApp</p>
+          <p>🔗 LinkedIn</p>
+        </div>
+        <div class="col-md-3">
+          <h4>Help</h4>
+          <p>FAQs</p>
+          <p>Privacy Policy</p>
+          <p>Terms & Conditions</p>
+          <p>Contact Support</p>
+        </div>
+        <div class="col-md-3">
+          <h4>Branches</h4>
+          <p>Mumbai</p>
+          <p>Delhi</p>
+          <p>Bangalore</p>
+          <p>Hyderabad</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">© 2025 Foodiz. All rights reserved.</div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
