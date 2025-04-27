@@ -1,0 +1,115 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: lightpink;
+  }
+  
+  header {
+    background-color: #ff4d4d;
+  }
+  
+  .search-bar {
+    flex-grow: 1;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    max-width: 300px;
+  }
+  
+  .auth-buttons button {
+    background: white;
+    color: #ff4d4d;
+    border: none;
+    margin: 0 5px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .sub-header {
+    background: #ffecec;
+    padding: 10px 30px;
+    position: inherit;
+  }
+  
+  .categories span {
+    margin-right: 15px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .food-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px lightpink(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .food-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .food-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .food-card h3 {
+    margin: 10px 0 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+  }
+  
+  .food-card .price {
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .food-card .quantity {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .food-card button {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+  }
+  
+  footer h4 {
+    font-weight: 600;
+  }
+  
+  footer p {
+    font-size: 14px;
+  }
+  
+  footer .container {
+    max-width: 1200px;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 767px) {
+    .food-card {
+      margin-bottom: 20px;
+    }
+  }
+  
